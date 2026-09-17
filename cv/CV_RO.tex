@@ -1,0 +1,171 @@
+% Source: CV_RO.pdf supplied by Rikuto Onishi, dated July 16, 2026.
+% This is a conversion of that snapshot, not an update of dates or research status.
+% Rebuild from the repository root with: make cv
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext}
+\usepackage[margin=0.72in,top=0.65in,bottom=0.65in]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{
+  pdftitle={Rikuto Onishi -- Curriculum Vitae},
+  pdfauthor={Rikuto Onishi},
+  pdfsubject={Curriculum Vitae, July 16, 2026},
+  pdfkeywords={economics, macroeconomics, curriculum vitae},
+  pdfdisplaydoctitle=true
+}
+
+\newcommand{\cvdate}{July 16, 2026}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1em}
+\raggedbottom
+\urlstyle{same}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\small Rikuto Onishi}
+\fancyfoot[R]{\small \thepage\ /\ \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{23pt}
+
+% Date column shared by education, positions, awards, and presentations.
+\newlength{\datewidth}
+\setlength{\datewidth}{100pt}
+\newcommand{\datedentry}[2]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{\datewidth}@{\hspace{12pt}}>{\raggedright\arraybackslash}X@{}}
+    #1 & #2
+  \end{tabularx}\par\vspace{4pt}%
+}
+
+% Each project title stays with its first lines of supporting text.
+\newcommand{\project}[2]{%
+  \Needspace{5\baselineskip}%
+  \par\addvspace{9pt}%
+  {\bfseries #1}\par
+  \if\relax\detokenize{#2}\relax\else
+    \vspace{2pt}{#2}\par
+  \fi
+}
+
+\newenvironment{researchpoints}{%
+  \begin{itemize}[leftmargin=15pt,label=\textendash,
+    topsep=4pt,itemsep=2pt,parsep=0pt,partopsep=0pt]
+}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Rikuto Onishi}\\[5pt]
+  {Curriculum Vitae \enspace\textbar\enspace \cvdate}
+\end{center}
+
+\section*{Contact Information}
+Department of Economics, The University of Texas at Austin\\
+2225 Speedway, BRB 1.116, C3100, Austin, Texas\\[3pt]
+\href{mailto:rikuto.onishi@utexas.edu}{rikuto.onishi@utexas.edu}
+\enspace\textbar\enspace
+\href{mailto:rikuto.onishi.ro@gmail.com}{rikuto.onishi.ro@gmail.com}\\[2pt]
+\href{https://www.rikutoonishi.com/}{www.rikutoonishi.com}
+
+\section*{Education}
+\datedentry{2021--Present}{Ph.D. in Economics, The University of Texas at Austin}
+{\small\textit{Supervisors: Olivier Coibion (Co-chair), Stefano Eusepi (Co-chair), Christoph Boehm}}\par\vspace{5pt}
+\datedentry{2018--2020}{M.A. in Economics, Keio University, Japan}
+\datedentry{2014--2018}{B.A. in Economics, Keio University, Japan}
+
+\section*{Research Interests}
+Macroeconomics, International Macro and Finance, Monetary Policy, Expectations Formation,
+Behavioral Macro
+
+\section*{Work in Progress}
+
+\project{Exchange Rate Disconnect with Disagreeing Arbitrageurs}{\textit{Job Market Paper}}
+\vspace{4pt}
+I investigate the disconnect between exchange rates and macroeconomic fundamentals through
+the lens of heterogeneous beliefs. I develop a two-country general equilibrium model in which
+international arbitrageurs disagree about future exchange-rate dynamics. Their disagreement
+generates a novel endogenous deviation from uncovered interest parity (UIP), which I call the
+wealth-share disagreement wedge. Calibrated using survey data on exchange rate expectations,
+the model quantitatively accounts for several key dimensions of the macro--exchange disconnect.
+
+\project{Stock Market Uncertainty and Firm Matching}{Joint with Husang Kim and Kai Wu}
+\begin{researchpoints}
+  \item Uses universe of Chinese VAT invoices data and exploits the 2015 stock market turbulence
+        as a natural experiment
+  \item Documents contraction in B2B transactions for firms that were more exposed to stock
+        market uncertainty
+  \item Develops a frictional matching model with stock prices as noisy signals
+\end{researchpoints}
+
+\project{Disagreement, Monetary Policy, and Term Premia}{Joint with Stefano Eusepi and Bruce Preston}
+\begin{researchpoints}
+  \item New Keynesian model with heterogeneous beliefs and short/long bonds
+  \item Explores stability and determinacy of the model in the presence of heterogeneous beliefs
+  \item Aims to capture time-varying term premia
+\end{researchpoints}
+
+% Preserve the source's two-page grouping. Revisit this break when adding content.
+\newpage
+
+\section*{Work in Progress \normalfont\normalsize (continued)}
+
+\project{Attention and Disagreement over the Business Cycle}{\textit{Second-year paper award}}
+\begin{researchpoints}
+  \item Asks why attention and disagreement are positively correlated, focusing on output
+        growth expectations
+  \item Reveals the important role of time-varying volatility of output growth process
+\end{researchpoints}
+
+\project{Using Exchange Rate Variation for Estimation}{Joint with Christoph Boehm and Husang Kim}
+
+\section*{Pre-Ph.D. Publication}
+\textbf{Sample Sensitivity for Two-Step and Continuous Updating GMM Estimators}\\[2pt]
+Joint with Taisuke Otsu\\[2pt]
+\textit{Economics Letters} (2021)
+
+\section*{Relevant Experiences \& Positions}
+\datedentry{2026}{Thomas J. Sargent Dissertation Fellowship at the Federal Reserve Bank of San Francisco}
+\datedentry{2025}{Dissertation Internship at the Federal Reserve Bank of Cleveland}
+\datedentry{2025}{RA for Professor Oliver Pf\"auti}
+\datedentry{2024--Present}{RA for Professor Christoph Boehm}
+\datedentry{2024}{Summer Internship at IMF}
+\datedentry{2023}{RA for Professor Stefano Eusepi}
+\datedentry{2023}{Visiting researcher at Keio University}
+\datedentry{2021--2024}{TA for Intro to Micro, Macro Theory, Advanced Micro, Computational Economics}
+
+\section*{Fellowships \& Awards}
+\datedentry{2026}{MFR Program Summer Session for Young Scholars (Invited attendee)}
+\datedentry{2024, 2025, 2026}{UT Austin Summer Research Fellowship}
+\datedentry{2024}{NBER Behavioral Macro Bootcamp (Invited attendee)}
+\datedentry{2023}{Best Second-Year Paper Award}
+\datedentry{2023--2026}{JASSO Scholarship for Graduate Studies}
+\datedentry{2021--Present}{Graduate Fellowship (UT Austin)}
+\datedentry{2021--2023}{Japan-IMF Scholarship Program for Advanced Studies}
+
+\section*{Presentations}
+\datedentry{2026}{Federal Reserve Bank of San Francisco (x2), MFR Program Summer Session for Young
+Scholars (poster, scheduled), Texas Macro Job Candidate Conference (scheduled)}
+\datedentry{2025}{Federal Reserve Bank of Cleveland, UT Austin, Waseda University}
+
+\section*{Citizenship}
+Japanese citizen, F1 visa
+
+\section*{Language}
+English (fluent), Japanese (native), Chinese-Mandarin (beginner)
+
+\end{document}

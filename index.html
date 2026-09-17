@@ -1,7 +1,149 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Academic research, working papers, and contact information.">
+    <meta name="theme-color" content="#fdf6e3">
+    <meta name="color-scheme" content="light dark">
+    <title>Rikuto Onishi's Website</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>
+      // Restore the preference before rendering to avoid a flash of the wrong theme.
+      try {
+        if (localStorage.getItem('research-site-theme') === 'dark') {
+          document.documentElement.dataset.theme = 'dark';
+          document.querySelector('meta[name="theme-color"]').content = '#002b36';
+        }
+      } catch (_) { /* The site also works when browser storage is unavailable. */ }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="wordmark" href="#about">Rikuto Onishi's Website<span aria-hidden="true"></span></a>
+        <div class="header-controls">
+          <nav aria-label="Main navigation">
+            <a href="#about" aria-current="location">About</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme" hidden>
+            <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 13.2A8.5 8.5 0 0 1 10.8 3.2a8.5 8.5 0 1 0 10 10Z"/></svg>
+            <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            <span class="theme-label" aria-hidden="true">Dark</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="container" tabindex="-1">
+      <section id="about" class="about-section" aria-labelledby="name" tabindex="-1">
+        <div class="section-eyebrow">About</div>
+        <h1 id="name">Rikuto Onishi</h1>
+        <!-- Replace bracketed draft content with your academic information. -->
+        <p class="affiliation">Economics Ph.D. candidate <span aria-hidden="true">/</span> University of Texas at Austin</p>
+        <p class="intro-email">
+          <a href="mailto:rikuto.onishi@utexas.edu">rikuto.onishi@utexas.edu</a>
+          <a href="mailto:rikuto.onishi.ro@gmail.com">rikuto.onishi.ro@gmail.com</a>
+          <a class="cv-link" href="files/cv.pdf">CV (PDF) <span aria-hidden="true">↗</span></a>
+        </p>
+        <div class="intro-grid">
+          <div class="bio">
+            <p>I'm a 6th-year economics Ph.D. candidate at UT Austin.</p>
+            <p>I was a <em>Thomas J. Sargent Dissertation Fellow at the San Francisco Fed</em> in 2026 summer, <em>a dissertation fellow at the Cleveland Fed</em> in 2025 summer, and a <em>Fund Intern at the IMF</em> in 2024 summer.</p>
+            <p><strong><em>I'm on the 2026-2027 job market.</em></strong></p>
+          </div>
+          <aside class="profile-details" aria-label="Research interests and profile">
+            <h2 class="detail-label">Research interests</h2>
+            <p>Macroeconomics, International Macro/Finance<br>Expectations formation/Behavioral Macro</p>
+            <div class="profile-links" aria-label="Profile links">
+              <a class="text-link" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://www.linkedin.com/in/rikuto-onishi-808108142">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://x.com/RikutoOnishi">X <span aria-hidden="true">↗</span></a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="research" class="research-section page-section" aria-labelledby="research-title" tabindex="-1">
+        <div class="section-heading">
+          <h2 id="research-title">Research</h2>
+          <span class="section-caption">Papers &amp; ongoing projects</span>
+        </div>
+        <!-- Add a Working papers group here when drafts are available. -->
+        <div class="research-group" aria-labelledby="work-in-progress-title">
+          <h3 id="work-in-progress-title" class="group-title">Work in progress</h3>
+          <!-- Each project gets its own list item. Keep coauthors and descriptions
+               below the title, and close the article and list item before the next project. -->
+          <ul class="project-list" role="list">
+            <li>
+              <article class="paper" aria-labelledby="project-one-title">
+                <h4 id="project-one-title">Exchange Rate Disconnect with Disagreeing Arbitrageurs</h4>
+                <p class="paper-designation">Job Market Paper</p>
+                <p class="paper-status">Draft available soon.</p>
+                <p class="project-description">I develop a two-country general equilibrium model in which international arbitrageurs disagree about future exchange rates. Trading gains and losses redistribute wealth across arbitrageurs, changing whose beliefs determine equilibrium prices. This mechanism amplifies exchange rate responses to standard macroeconomic shocks and generates an endogenous wedge in uncovered interest parity, without requiring a separate financial shock. Calibrated to macroeconomic, financial, and survey data, the model accounts for exchange rates’ high volatility and weak relationship with observable fundamentals. The calibrated wealth-share multiplier implies that amplification accounts for approximately 70 percent of exchange rate variance.</p>
+              </article>
+            </li>
+            <li>
+              <article class="paper" aria-labelledby="project-two-title">
+                <h4 id="project-two-title">Disagreement, Monetary Policy, and Term Premia</h4>
+                <p class="paper-authors">Joint with Stefano Eusepi, and Bruce Preston</p>
+              </article>
+            </li>
+            <li>
+              <article class="paper" aria-labelledby="project-three-title">
+                <h4 id="project-three-title">Using Exchange Rate Variation for Estimation</h4>
+                <p class="paper-authors">Joint with Chris Boehm and Husang Kim</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+
+        <div class="research-group">
+          <h3 class="group-title">Pre-PhD publication</h3>
+          <article class="paper" aria-labelledby="pre-phd-publication-title">
+            <div class="paper-heading">
+              <h4 id="pre-phd-publication-title"><a href="https://doi.org/10.1016/j.econlet.2020.109685">Sample sensitivity for two-step and continuous updating GMM estimators</a></h4>
+              <span class="paper-year">2021</span>
+            </div>
+            <p class="paper-authors">Rikuto Onishi and Taisuke Otsu</p>
+            <p class="paper-status"><em>Economics Letters</em>, 198, 109685.</p>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1016/j.econlet.2020.109685">Published version <span aria-hidden="true">↗</span></a>
+              <a href="https://www.sanken.keio.ac.jp/publication/KEO-dp/155/KEO-DP155.pdf">Working paper <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section page-section" aria-labelledby="contact-title" tabindex="-1">
+        <div class="section-heading">
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <h3 class="detail-label">Email</h3>
+            <!-- Replace with: <a href="mailto:you@university.edu">you@university.edu</a> -->
+            <p><a href="mailto:rikuto.onishi.ro@gmail.com">rikuto.onishi.ro@gmail.com</a></p>
+            <!-- put another email -->
+            <p><a href="mailto:rikuto.onishi@utexas.edu">rikuto.onishi@utexas.edu</a></p>
+          </div>
+          <div>
+            <h3 class="detail-label">Address</h3>
+            <address>Department of Economics, UT Austin<br>2225 Speedway · Austin, TX 78712<br>United States</address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>Rikuto Onishi</p>
+      <a href="#about">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
 </html>
