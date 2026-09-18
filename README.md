@@ -32,5 +32,3 @@ Then open <http://127.0.0.1:8000>.
 ## Publish
 
 Push the finished files to the branch configured for GitHub Pages in the repository's Settings → Pages. The website is served directly from this repository; no package installation is needed.
-
-Design references: [Oliver Pfäuti's research website](https://www.oliverpfaeuti.com/) for content organization and [Solarized](https://ethanschoonover.com/solarized/) for the palette.
