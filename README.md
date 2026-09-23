@@ -15,7 +15,7 @@ All content lives in `index.html`. Bracketed text and “Your Name” are placeh
 - LinkedIn and X links appear beside Contact in the bio; edit their `href` values to update the destinations.
 - Remove research groups you do not need, or add a publications group using the same structure.
 - Update the page title and description in `<head>` when changing your profile.
-- If you add a portrait, supply your own photo and descriptive alt text.
+- The portrait beside your introduction uses `files/rikuto-onishi.jpg`, a smaller web copy of `files/Rikuto_007.jpg`. To replace it, update the web copy and its descriptive alt text in `index.html`. The layout stacks the photo below your name and contact links on mobile.
 
 `styles.css` contains the responsive layout and Solarized-inspired palettes. `script.js` handles the theme toggle, local preference storage, and active section navigation. Section links and abstracts work without JavaScript. Light mode is the default; a chosen theme is remembered on the visitor's device.
 
