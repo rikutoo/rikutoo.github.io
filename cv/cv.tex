@@ -1,0 +1,213 @@
+% Content: CV_RO.tex, reflecting the July 16, 2026 source snapshot.
+% Reference titles and contact details verified on faculty websites, September 24, 2026.
+% Structure: Saya Ikegawa's supplied CV; typography: the supplied CV template.
+% Dates and research status are intentionally preserved from CV_RO.tex.
+% Compile from this directory: make cv
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{baskervillef}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{needspace}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\hypersetup{
+  pdftitle={Rikuto Onishi -- Curriculum Vitae},
+  pdfauthor={Rikuto Onishi},
+  pdfsubject={Curriculum Vitae; July 16, 2026 source; reference contacts updated September 24, 2026},
+  pdfdisplaydoctitle=true
+}
+
+% Allow room for complete reference blocks while retaining the 11pt body text.
+\addtolength{\topmargin}{-0.05in}
+\addtolength{\textheight}{0.4in}
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{1em}
+
+% Retain the template's italic section labels and horizontal rules.
+\titleformat{\section}{\normalsize\itshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{5pt}
+
+\newenvironment{cvsection}{%
+  \begin{list}{}{\setlength{\leftmargin}{0.15in}%
+    \setlength{\rightmargin}{0.10in}%
+    \setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}%
+    \setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}}\item[]
+}{\end{list}}
+
+% Institutions/roles at left, dates at right, details on the second line.
+\newcommand{\resumeSubheading}[3]{%
+  \Needspace{3\baselineskip}%
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{10pt}}r@{}}
+    \textbf{#1} & #2 \\
+    \multicolumn{2}{@{}l@{}}{\small\textit{#3}}
+  \end{tabularx}\par\vspace{1pt}%
+}
+
+\newcommand{\datedentry}[2]{%
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{12pt}}r@{}}
+    #1 & #2
+  \end{tabularx}\par\vspace{1pt}%
+}
+
+\newcommand{\project}[2]{%
+  \Needspace{4\baselineskip}%
+  \par\addvspace{5pt}%
+  ``#1''\par
+  \if\relax\detokenize{#2}\relax\else
+    {\small #2}\par
+  \fi
+}
+
+\newenvironment{projectdetails}{%
+  \begin{list}{}{\setlength{\leftmargin}{0.15in}%
+    \setlength{\rightmargin}{0pt}\setlength{\topsep}{3pt}%
+    \setlength{\partopsep}{0pt}\setlength{\parsep}{0pt}}\item[]\small
+}{\end{list}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE Rikuto Onishi}\\[5pt]
+  \href{mailto:rikuto.onishi@utexas.edu}{rikuto.onishi@utexas.edu}
+  \enspace\textbar\enspace
+  \href{https://www.rikutoonishi.com/}{www.rikutoonishi.com}\\[2pt]
+  {\small Department of Economics, The University of Texas at Austin\\
+  2225 Speedway, BRB 1.116, C3100, Austin, Texas\\
+  \href{mailto:rikuto.onishi.ro@gmail.com}{rikuto.onishi.ro@gmail.com}}
+\end{center}
+
+\section*{Education}
+\begin{cvsection}
+  \resumeSubheading{The University of Texas at Austin}{2021--Present}
+    {Ph.D. in Economics}
+  \resumeSubheading{Keio University -- Japan}{2018--2020}
+    {M.A. in Economics}
+  \resumeSubheading{Keio University -- Japan}{2014--2018}
+    {B.A. in Economics}
+\end{cvsection}
+
+% Reference sources (verified September 24, 2026):
+% https://sites.google.com/site/ocoibion/home
+% https://sites.google.com/view/stefano-eusepi/home
+% https://www.christopheboehm.com/
+\section*{References}
+\begin{cvsection}
+  \small
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{12pt}}>{\raggedright\arraybackslash}X@{}}
+    \href{https://sites.google.com/site/ocoibion/home}{Olivier Coibion} (Co-chair)
+      & \href{https://sites.google.com/view/stefano-eusepi/home}{Stefano Eusepi} (Co-chair) \\
+    Malcolm Forsman Centennial Professor & Professor of Economics \\
+    Department of Economics & Department of Economics \\
+    The University of Texas at Austin & The University of Texas at Austin \\
+    \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu}
+      & \href{mailto:eusepi73@yahoo.com}{eusepi73@yahoo.com} \\[5pt]
+    \href{https://www.christopheboehm.com/}{Christoph Boehm} & \\
+    Associate Professor & \\
+    Department of Economics & \\
+    The University of Texas at Austin & \\
+    \href{mailto:chris.e.boehm@gmail.com}{chris.e.boehm@gmail.com} &
+  \end{tabularx}
+\end{cvsection}
+
+\section*{Job Market Paper}
+\begin{cvsection}
+  ``Exchange Rate Disconnect with Disagreeing Arbitrageurs''
+  \begin{projectdetails}
+    \textbf{Abstract:} I develop a two-country general equilibrium model in which international arbitrageurs disagree about future exchange rates. Trading gains and losses redistribute wealth across arbitrageurs, changing whose beliefs determine equilibrium prices. This mechanism amplifies exchange rate responses to standard macroeconomic shocks and generates an endogenous wedge in uncovered interest parity, without requiring a separate financial shock. Calibrated to macroeconomic, financial, and survey data, the model accounts for exchange rates’ high volatility and weak relationship with observable fundamentals. The calibrated wealth-share multiplier implies that amplification accounts for approximately 70 percent of exchange rate variance.
+  \end{projectdetails}
+\end{cvsection}
+
+\section*{Work in Progress}
+\begin{cvsection}
+  \project{Stock Market Uncertainty and Firm Matching}{with Husang Kim and Kai Wu}
+  \begin{projectdetails}
+    Uses the universe of Chinese VAT invoices and exploits the 2015 stock market
+    turbulence as a natural experiment. Documents a contraction in B2B transactions
+    for firms more exposed to stock market uncertainty. Develops a frictional
+    matching model with stock prices as noisy signals.
+  \end{projectdetails}
+
+  \project{Disagreement, Monetary Policy, and Term Premia}
+    {with Stefano Eusepi and Bruce Preston}
+  \begin{projectdetails}
+    Develops a New Keynesian model with heterogeneous beliefs and short/long bonds.
+    Explores stability and determinacy in the presence of heterogeneous beliefs
+    and aims to capture time-varying term premia.
+  \end{projectdetails}
+
+  \par\addvspace{5pt}
+  \begin{minipage}{\linewidth}
+    ``Using Exchange Rate Variation for Estimation''\\
+    {\small with Christoph Boehm and Husang Kim}
+  \end{minipage}
+\end{cvsection}
+
+\newpage
+
+\section*{Pre-Ph.D. Publication}
+\begin{cvsection}
+  ``Sample Sensitivity for Two-Step and Continuous Updating GMM Estimators''\\[2pt]
+  {\small with Taisuke Otsu. \textit{Economics Letters} (2021).}
+\end{cvsection}
+
+\section*{Research Experience}
+\begin{cvsection}
+  \resumeSubheading{Research Assistant}{2025}{Professor Oliver Pf\"auti}
+  \resumeSubheading{Research Assistant}{2024--2026}{Professor Christoph Boehm}
+  \resumeSubheading{Research Assistant}{2023}{Professor Stefano Eusepi}
+\end{cvsection}
+
+\section*{Teaching Experience}
+\begin{cvsection}
+  \resumeSubheading{Teaching Assistant}{2021--2024}
+    {The University of Texas at Austin}
+  {\small Intro to Micro, Macro Theory, Advanced Micro, Computational Economics, Macroeconomics (MA)}
+\end{cvsection}
+
+\section*{Fellowships, Awards, and Professional Experience}
+\begin{cvsection}
+  \datedentry{Thomas J. Sargent Dissertation Fellowship,
+    Federal Reserve Bank of San Francisco}{2026}
+  \datedentry{MFR Program Summer Session for Young Scholars (Invited attendee)}{2026}
+  \datedentry{UT Austin Summer Research Fellowship}{2024, 2025, 2026}
+  \datedentry{Dissertation Internship, Federal Reserve Bank of Cleveland}{2025}
+  \datedentry{Summer Internship, International Monetary Fund}{2024}
+  \datedentry{NBER Behavioral Macro Bootcamp (Invited attendee)}{2024}
+  \datedentry{Visiting Researcher, Keio University}{2023}
+  \datedentry{Best Second-Year Paper Award}{2023}
+  \datedentry{JASSO Scholarship for Graduate Studies}{2023--2026}
+  \datedentry{Graduate Fellowship (UT Austin)}{2021--Present}
+  \datedentry{Japan-IMF Scholarship Program for Advanced Studies}{2021--2023}
+\end{cvsection}
+
+% CV_RO does not identify which paper was presented at each venue.
+\section*{Presentations}
+\begin{cvsection}
+  \datedentry{Federal Reserve Bank of San Francisco (x2), MFR Program Summer
+    Session for Young Scholars (poster, scheduled), Texas Macro Job Candidate
+    Conference (scheduled)}{2026}
+  \datedentry{Federal Reserve Bank of Cleveland, UT Austin, Waseda University}{2025}
+\end{cvsection}
+
+\section*{Skills and Interests}
+\begin{cvsection}
+  \textbf{Research interests:} Macroeconomics, International Macro and Finance,
+    Monetary Policy, Expectations Formation, Behavioral Macro\\[3pt]
+  \textbf{Languages:} English (fluent), Japanese (native), Chinese-Mandarin (beginner)\\[3pt]
+  \textbf{Citizenship:} Japanese citizen, F1 visa
+\end{cvsection}
+
+\end{document}
