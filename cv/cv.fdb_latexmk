@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1790282311.31298 "/Users/rikutoonishi/Documents/GitHub/rikutoo.github.io/cv/cv.tex" "cv.pdf" "cv" 1790282311.78089 0
-  "/Users/rikutoonishi/Documents/GitHub/rikutoo.github.io/cv/cv.tex" 1790282311.15196 8816 7682bbde9f5cfefb0ee53fc07d9f6986 ""
+["pdflatex"] 1790283510.1983 "/Users/rikutoonishi/Documents/GitHub/rikutoo.github.io/cv/cv.tex" "cv.pdf" "cv" 1790283510.66577 0
+  "/Users/rikutoonishi/Documents/GitHub/rikutoo.github.io/cv/cv.tex" 1790283509.99282 8852 8e72d517a7f6cea93b70c8c2d21e6be0 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc" 1736348841 2988 9dc2712ba6e6dcb67c459dabfcdb6a75 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
@@ -84,9 +84,9 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1784841691 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774209607 3636776 dc5fa9b6b1453b9d196cd42edf876004 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "cv.aux" 1790282311.74312 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "cv.out" 1790282311.59394 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.tex" 1790282311.15196 8816 7682bbde9f5cfefb0ee53fc07d9f6986 ""
+  "cv.aux" 1790283510.62929 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "cv.out" 1790283510.47643 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv.tex" 1790283509.99282 8852 8e72d517a7f6cea93b70c8c2d21e6be0 ""
   (generated)
   "cv.aux"
   "cv.log"
