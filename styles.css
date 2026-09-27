@@ -99,13 +99,12 @@ h1 { font-size: clamp(2.5rem, 5vw, 3.75rem); line-height: 1.16; letter-spacing: 
 .project-list > li + li { margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--line); }
 .project-list .paper-authors { margin-top: 10px; }
 .paper-designation { margin-top: 10px; color: var(--accent); font-size: .875rem; font-weight: 600; }
-.paper-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
 .paper h4 { font-size: 1.375rem; line-height: 1.45; letter-spacing: -.015em; }
 .paper h4 a { color: inherit; text-decoration: none; }
 .paper h4 a:hover { color: var(--accent); text-decoration: underline; }
-.paper-year { color: var(--muted); font-size: .8125rem; flex-shrink: 0; }
 .paper-authors { margin-top: 6px; color: var(--muted); font-size: .9375rem; }
 .paper-status { margin-top: 6px; font-size: .875rem; font-style: italic; }
+.paper-citation { margin-top: 6px; font-size: .875rem; }
 .abstract { margin-top: 13px; }
 .abstract summary { display: flex; gap: 9px; align-items: center; width: fit-content; min-height: 36px; list-style: none; color: var(--accent); font-size: .875rem; }
 .abstract summary::-webkit-details-marker { display: none; }
@@ -157,7 +156,6 @@ details[open] .disclosure-icon::after { transform: rotate(90deg); }
   .section-heading h2 { font-size: 1.875rem; }
   .section-caption { width: 100%; }
   .page-section { padding-block: 34px 42px; }
-  .paper-heading { flex-wrap: wrap; gap: 4px 18px; }
   .paper h4 { font-size: 1.25rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 28px; }
   .site-footer { padding-bottom: 24px; }
