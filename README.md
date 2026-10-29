@@ -8,7 +8,7 @@ All content lives in `index.html`. Bracketed text and “Your Name” are placeh
 
 - Update your name, position, university, bio, research interests, and contact information.
 - Your emails are featured directly under your name and affiliation, and repeated in Contact. Keep the addresses and their `mailto:` links in sync in both places.
-- The CV link beside your emails opens `files/cv.pdf`. Edit `cv/CV_RO.tex` and run `make cv` to rebuild it; see `cv/README.md` for details. The source preserves the supplied CV's July 16, 2026 snapshot.
+- The CV link beside your emails opens `files/cv.pdf`. Edit `cv/cv.tex` and run `make cv` to rebuild the current CV and refresh the website PDF; see `cv/README.md` for details.
 - Copy a research `<article>` for each paper and give its heading a unique `id` (also update `aria-labelledby`).
 - For work in progress, copy a complete `<li>…</li>` inside `.project-list`. Each item contains one article, with coauthors below its title. Spacing and dividers are applied automatically between items; keep publications in their separate research group.
 - Add paper links when drafts are available. Put local PDFs in a `files/` directory.
