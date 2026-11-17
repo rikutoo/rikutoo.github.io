@@ -7,7 +7,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{baskervillef}
-\usepackage[empty]{fullpage}
+\usepackage[letterpaper,hmargin=1in,vmargin=0.65in]{geometry}
 \usepackage{titlesec}
 \usepackage{tabularx}
 \usepackage{array}
@@ -24,9 +24,6 @@
   pdfdisplaydoctitle=true
 }
 
-% Allow room for complete reference blocks while retaining the 11pt body text.
-\addtolength{\topmargin}{-0.05in}
-\addtolength{\textheight}{0.4in}
 \pagestyle{empty}
 \urlstyle{same}
 \raggedright
@@ -106,19 +103,16 @@
 \section*{References}
 \begin{cvsection}
   \small
-  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{12pt}}>{\raggedright\arraybackslash}X@{}}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{12pt}}>{\raggedright\arraybackslash}X@{\hspace{12pt}}>{\raggedright\arraybackslash}X@{}}
     \href{https://sites.google.com/site/ocoibion/home}{Olivier Coibion} (Co-chair)
-      & \href{https://sites.google.com/view/stefano-eusepi/home}{Stefano Eusepi} (Co-chair) \\
-    Malcolm Forsman Centennial Professor & Professor of Economics \\
-    Department of Economics & Department of Economics \\
-    The University of Texas at Austin & The University of Texas at Austin \\
+      & \href{https://sites.google.com/view/stefano-eusepi/home}{Stefano Eusepi} (Co-chair)
+      & \href{https://www.christopheboehm.com/}{Christoph Boehm} \\
+    Malcolm Forsman Centennial Professor & Professor of Economics & Associate Professor \\
+    Department of Economics & Department of Economics & Department of Economics \\
+    The University of Texas at Austin & The University of Texas at Austin & The University of Texas at Austin \\
     \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu}
-      & \href{mailto:stefano.eusepi@austin.utexas.edu}{stefano.eusepi@austin.utexas.edu} \\[5pt]
-    \href{https://www.christopheboehm.com/}{Christoph Boehm} & \\
-    Associate Professor & \\
-    Department of Economics & \\
-    The University of Texas at Austin & \\
-    \href{mailto:chris.e.boehm@gmail.com}{chris.e.boehm@gmail.com} &
+      & \href{mailto:stefano.eusepi@austin.utexas.edu}{stefano.eusepi@austin.utexas.edu}
+      & \href{mailto:chris.e.boehm@gmail.com}{chris.e.boehm@gmail.com}
   \end{tabularx}
 \end{cvsection}
 
@@ -161,8 +155,8 @@ Macroeconomics, International Macro and Finance,
   \end{minipage}
 \end{cvsection}
 
-\newpage
-
+% Keep the publication heading and its full citation together.
+\Needspace{4\baselineskip}
 \section*{Pre-Ph.D. Publication}
 \begin{cvsection}
   ``Sample Sensitivity for Two-Step and Continuous Updating GMM Estimators''\\[2pt]
